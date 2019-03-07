@@ -54,7 +54,18 @@
         e.preventDefault();
         return this.next();
       }
+      if (kc === 49 || kc === 50 || kc === 51 || kc === 52) {
+        e.preventDefault();
+        return this.number(kc-49);
+      }
     };
+
+    Application.prototype.number = function(e) {
+      if (this.active_index != e && e <= this.max) {
+        this.active_index = e;
+        return this.update();
+      }
+    }
 
     Application.prototype.previous = function() {
       if (this.active_index > this.min) {

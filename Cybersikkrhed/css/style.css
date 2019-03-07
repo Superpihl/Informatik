@@ -22,6 +22,14 @@ br {
   line-height: 250%;
 }
 
+#gnome {
+  position: absolute;
+  right: 0%;
+  width: 2%;
+  min-width: 20px;
+  transform: rotate(45deg);
+}
+
 /* "Position: absolute" sørger for, at billedets position ikke er afhængig af noget */
 /* Procenterne er billedets placering på siden */
 #slides {
