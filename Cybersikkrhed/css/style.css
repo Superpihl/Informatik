@@ -108,6 +108,10 @@ ul#steps li.active {
   font-size: 96px;
 }
 
+ul#steps p:hover {
+  cursor: pointer;
+}
+
 #titles {
   position: absolute;
   top: 40%;

@@ -119,3 +119,18 @@ function snackbarvis() {
       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
     }, 1500);
 }
+
+function clickupdate(c) {
+
+  this.$roller = $('.roller');
+  this.$step = $('#steps li');
+  this.$title = $('#titles li');
+  var y;
+  y = -(c * 100);
+  this.$roller.css(DEMO.utils.transform, DEMO.utils.translate(0, y + "%"));
+  this.$step.removeClass('active');
+  this.$title.removeClass('active');
+  this.$step.eq(c).addClass('active');
+  return this.$title.eq(c).addClass('active');
+
+}
