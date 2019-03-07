@@ -24,7 +24,7 @@ br {
 
 #gnome {
   position: absolute;
-  right: 0%;
+  right: 1%;
   width: 2%;
   min-width: 20px;
   transform: rotate(45deg);
@@ -87,10 +87,9 @@ br {
 
 ul#steps {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
   height: 110px;
-  margin-top: -55px;
 }
 /* "webkit transform" sørger for, at ældre browsere er kompatible med siden */
 ul#steps li {
@@ -111,10 +110,9 @@ ul#steps li.active {
 
 #titles {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 25%;
   width: 60%;
-  margin-top: -165px;
   padding: 110px 0;
 }
 #titles ul {
@@ -142,12 +140,6 @@ ul#steps li.active {
   opacity: 1;
   -webkit-transition: visibility 0ms linear, opacity 666ms cubic-bezier(0.666, 0, 0.333, 1);
   transition: visibility 0ms linear, opacity 666ms cubic-bezier(0.666, 0, 0.333, 1);
-}
-
-.fyld {
-  height: 200%;
-  width: 100%;
-  display: block;
 }
 
 #titles li p {
